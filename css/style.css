@@ -7249,6 +7249,23 @@ a.text-dark:hover, a.text-dark:focus {
   .list-group li i {
     margin-right: 10px; }
 
+#edit-btn {
+  margin-top: 20px;
+  width: 110px;
+  height: 34px;
+  text-align: center;
+  position: relative;
+  float: right;
+  right: 0;
+  background: #407BFF;
+  border-radius: 4px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #FFFFFF; }
+
 #weekly {
   background: #F1FFF0;
   border-radius: 4px;
@@ -7266,7 +7283,8 @@ a.text-dark:hover, a.text-dark:focus {
   background: #FFFFFF;
   border-radius: 8px;
   padding: 10px;
-  margin-top: 35px; }
+  margin-top: 35px;
+  height: 245px; }
 
 .table thead {
   background: #407BFF;

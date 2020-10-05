@@ -140,6 +140,26 @@ color: #222F72;
 
 //table  
 
+#edit-btn {
+    margin-top: 20px;
+    width: 110px;
+height: 34px;
+text-align: center;
+position: relative;
+float: right;
+right: 0;
+background: #407BFF;
+border-radius: 4px;
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 27px;
+color: #FFFFFF;
+
+
+}
+
 #weekly {
     background: #F1FFF0;
     border-radius: 4px;
@@ -161,9 +181,11 @@ color: #40FF53;
     border-radius: 8px;
     padding: 10px;
     margin-top: 35px;
+    height: 245px;
 }
 
 .table {
+   
     thead{
         background: #407BFF;
         border-radius: 6px;
@@ -172,6 +194,7 @@ font-style: normal;
 font-weight: 500;
 font-size: 16px;
 line-height: 21px;
+
 
 /* identical to box height, or 131% */
 text-align: center;
@@ -194,3 +217,6 @@ letter-spacing: -0.02em;
 color: #848484;
     }
 }
+
+//billing 
+
