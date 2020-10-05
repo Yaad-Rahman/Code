@@ -6,11 +6,191 @@
     #sidebar{
         width: 14rem!important;
         height: 100vh;
+        margin-top: 20px;
     }
 
     #content-wrapper{
         background-color: #f8f9fc;
         width: 100%;
         overflow-x: hidden;
+    }
+}
+
+#notification {
+    
+    font-size: 37px;
+    color: #FAD137;
+}
+
+//head-part
+
+#main-heading{
+    font-family: Poppins;
+font-style: normal;
+font-weight: 600;
+font-size: 22px;
+line-height: 21px;
+    color: #282f5b;
+
+}
+
+#pay-logo{
+    background-color: darkblue;
+    color: white;
+    padding: 0;
+    margin: 0;
+
+}
+
+#pay-inner{
+    background-color: white !important;
+    color: darkblue !important;
+    padding: 0;
+    margin: 0;
+}
+
+//search-box 
+#search {
+    background: #FFFFFF;
+    border: 1px solid #ABABAB;
+    box-sizing: border-box;
+    border-radius: 30px;
+    background-image: url('/Search.png');
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 40px;
+  background-position-x: 10px;
+}
+
+//user
+
+.user { 
+    margin-left: 46px;
+    p {
+        font-family: Mulish;
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 21px;
+/* identical to box height, or 131% */
+text-align: center;
+letter-spacing: -0.02em;
+float: right;
+padding-top: 10px;
+padding-left: 5px;
+color: #222F72;
+
+
+    }
+   
+}
+
+
+//cards
+
+.card {
+    h3{
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 39px;
+        color: #3C427B;
+        text-align: center;
+    }
+
+    p {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 18px;
+        text-align: center;
+        color: #606060;
+
+
+    }
+}
+
+//side bar list
+
+.list-group {
+    li {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 21px;
+        align-items: center;
+        letter-spacing: -0.02em;
+        color: #323643;
+        border: none;
+
+        &:hover{
+            background-color: #323643;
+            color: white;
+
+        }
+
+        i {
+            margin-right: 10px;
+        }
+    }
+}
+
+//table  
+
+#weekly {
+    background: #F1FFF0;
+    border-radius: 4px;
+    width: 125px;
+    height: 40px;
+    font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 27px;
+
+/* identical to box height */
+
+color: #40FF53;
+}
+
+.container {
+    background: #FFFFFF;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 35px;
+}
+
+.table {
+    thead{
+        background: #407BFF;
+        border-radius: 6px;
+        font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 21px;
+
+/* identical to box height, or 131% */
+text-align: center;
+letter-spacing: -0.02em;
+color: #FFFFFF;
+
+
+    }
+
+    tbody {
+        border-radius: 6px;
+        font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 21px;
+/* identical to box height, or 131% */
+text-align: center;
+letter-spacing: -0.02em;
+color: #848484;
     }
 }

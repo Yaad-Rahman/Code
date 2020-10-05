@@ -6,31 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet"> 
 </head>
+
 
 <body>
     <div id="wrapper">
-        <div id="sidebar">
+        <div id="sidebar" style="margin-top: 50px;">
+            <img src="/logo.png" style="padding-bottom: 40px;"/>
             <ul class="list-group">
-                <li class="list-group-item">Cras justo odio</li>
-                <li class="list-group-item">Dapibus ac facilisis in</li>
-                <li class="list-group-item">Morbi leo risus</li>
-                <li class="list-group-item">Porta ac consectetur ac</li>
-                <li class="list-group-item">Vestibulum at eros</li>
+                <li class="list-group-item"><i class="fa fa-th-large" aria-hidden="true"></i>
+                    Home</li>
+                <li class="list-group-item"><i class="fa fa-file-text-o" aria-hidden="true"></i>
+                    Clients</li>
+                <li class="list-group-item"><i class="fa fa-bell-o" aria-hidden="true"></i>
+                    Tasks</li>
+                <li class="list-group-item"><i class="fa fa-calendar" aria-hidden="true"></i>
+                    Appointments</li>
+                <li class="list-group-item"><i class="fa fa-commenting-o" aria-hidden="true"></i>
+                    Live Chat</li>
+                <li class="list-group-item"><i class="fa fa-credit-card" aria-hidden="true"></i>
+                    Billing</li>
+                <li class="list-group-item"><i class="fa fa-user" aria-hidden="true"></i>
+                    Agreements</li>
+                <li class="list-group-item"><i class="fa fa-user" aria-hidden="true"></i>
+                    Reports</li>
             </ul>
         </div>
 
         <div id="content-wrapper">
-            <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white" style="height: 75px;">
 
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
+                    <ul class="navbar-nav mr-auto invisible">
                         <li class="nav-item active">
                             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                         </li>
@@ -41,7 +53,29 @@
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Dropdown
-                            </a>
+                            </a><ul class="navbar-nav mr-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Link</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Dropdown
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                                </li>
+                            </ul>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="#">Action</a>
                                 <a class="dropdown-item" href="#">Another action</a>
@@ -54,51 +88,81 @@
                         </li>
                     </ul>
                     <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="search">
+                        <i class="fa fa-bell-o" aria-hidden="true" id="notification"></i>
+                        <div class="user">
+                        <img id="user_img" src="user_pic.png" />
+                        <p id="user_login">Loggedin User <i class="fa fa-caret-down" aria-hidden="true"></i>
+                        </p>
+                        </div>
+                        
                     </form>
                 </div>
             </nav>
             
-            <div class="row">
-                <div class="col-md-6">
-                    <h1>Debit Doctor LTD.</h1>
+            <div class="row" style="padding-top: 45px; padding-bottom: 45px;">
+                <div class="col-md-6" >
+                    <h1 id="main-heading" style="padding-left: 28px;">Debit Doctor LTD.</h1>
                 </div>
                 <div class="col-md-6 text-right">
                     <button class="btn btn-primary">Overview</button>
-                    <button class="btn btn-primary">Overview</button>
-                    <button class="btn btn-primary">Overview</button>
-                    <button class="btn btn-primary">Overview</button>
-                    <button class="btn btn-primary">Overview</button>
+                    <button class="btn btn-primary">Billing</button>
+                    <button class="btn btn-primary">Logs</button>
+                    <button class="btn btn-primary">View LP</button>
+                    <button class="btn btn-primary">Notification</button>
+                    <button class="btn btn-primary">Edit Client</button>
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row" style="padding-left: 28px;">
                 <div class="col-md-3">
                     <div class="card">
                         <h3>-£785.56</h3>
-                        <p>text</p>
+                        <p>Balance</p>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="card">
-                        <h3>-£785.56</h3>
-                        <p>text</p>
+                        <h3>£120.30</h3>
+                        <p>Total Payment</p>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="card">
-                        <h3>-£785.56</h3>
-                        <p>text</p>
+                        <h3>£220</h3>
+                        <p>Max. Ad Speed</p>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="card">
-                        <h3>-£785.56</h3>
-                        <p>text</p>
+                        <h3>3</h3>
+                        <p>No. Of Top Up</p>
                     </div>
                 </div>
             </div>
+
+            <div class="container">            
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Status</th>
+                      <th>Payment Method</th>
+                      <th>Next Renewal</th>
+                      <th>Renewal Amount</th>
+                      <th>Number of Renewal</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td id="weekly">Weekly</td>
+                      <td>Card Payment</td>
+                      <td>27 August 2020</td>
+                      <td>£500.00</td>
+                      <td>2</td>
+                    </tr>
+                    </tbody>
+                    </table>
            
         </div>
     </div>
