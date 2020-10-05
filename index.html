@@ -140,9 +140,10 @@
                         <p>No. Of Top Up</p>
                     </div>
                 </div>
+                
             </div>
 
-            <div class="container">            
+            <div class="container" style="height: 245px;">            
                 <table class="table">
                   <thead>
                     <tr>
@@ -168,29 +169,106 @@
            
         </div>
 
-        <div class="row" style="margin-top: 35px; margin-left: 28px;" id="billing">
-            <div class="col-md-6" style="background-color: #FFFFFF; border-radius: 8px;">
-                <div class="row">
-                    <div class="col">
-                        <h5>billing details</h5>
-                        <p>Expires 09/25</p>
-                    </div>
-                    <div class="col">
-                        <h5>Billing Address</h5>
-                        <p>10 John Street, Fleet, Hampshire, GU10 5QJ</p>
-                        <h5>Phone</h5>
-                        <p>01252 642786</p>
+        <div class="row" style="padding-left: 28px; margin-top: 35px;" id="billing">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="row" style="padding: 10px;">
+                        <div class="col">
+                            <h5>Billing Details</h5>
+                            <img src="card.png" />
+                            <h5><strong>****  ****  ****  1942****  ****  ****  1942</strong></h5>
+                            <p>Expires 09/25</p>
+                        </div>
+                        <div class="col">
+                            <h5>Billing Address</h5>
+                            <p>10 John Street, Fleet, Hampshire, GU10 5QJ</p>
+                            <h5>Phone </h5>
+                            <p>01252 642786</p>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <div class="col-md-3" style="background-color: #FFFFFF; border-radius: 8px;margin-left: 10px;">
-                Chart header
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="Chart03.png" />
+                </div>
             </div>
-
-            <div class="col-md-3" style="background-color: #FFFFFF; border-radius: 8px; margin-left: 10px;">
-                chart header
+            <div class="col-md-3">
+                <div class="card" style="margin-right: 20px;">
+                    <img src="Chart04.png"  />
+                </div>
             </div>
+        </div>
+
+        <div class="container">            
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Status</th>
+                  <th>Business Name</th>
+                  <th>Customer Email</th>
+                  <th>Issued On</th>
+                  <th>Paid On</th>
+                  <th>Method</th>
+                  <th>Attempts</th>
+                  <th>Type</th>
+                  <th></th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td id="paid" class="btn">Paid</td>
+                  <td>ABC Builder LTD</td>
+                  <td>george@payperuistpmer.com</td>
+                  <td>13 Aug 2020</td>
+                  <td>27 Nov 2020</td>
+                  <td>Bank Transfer</td>
+                  <td>1</td>
+                  <td>Recurring</td>
+                  <td class="btn" id="pdf">PDF</td>
+                  <td></td>
+                </tr>
+                <tr>
+                    <td id="paid" class="btn">Paid</td>
+                    <td>John BIshop </td>
+                    <td>john@example.com</td>
+                    <td>03 Aug 2020</td>
+                    <td>17 Aug 2020</td>
+                    <td>Card Payment</td>
+                    <td>2</td>
+                    <td>Recurring</td>
+                    <td class="btn" id="pdf">PDF</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td id="paid" class="btn">Paid</td>
+                    <td>Example Company</td>
+                    <td>ricky@example.com</td>
+                    <td>13 Jul 2020</td>
+                    <td>27 Oct 2020</td>
+                    <td>Bank Transfer</td>
+                    <td>2</td>
+                    <td>Recurring</td>
+                    <td class="btn" id="pdf">PDF</td>
+                    <td></td>
+                  </tr>
+                  <tr style="color: #E7ABAB;">
+                    <td id="due" class="btn">Due</td>
+                    <td>MYPC Limited</td>
+                    <td>Dave@example.com</td>
+                    <td>23 May 2020</td>
+                    <td></td>
+                    <td>Card Payment</td>
+                    <td>3</td>
+                    <td>Recurring</td>
+                    <td class="btn" id="pdf">PDF</td>
+                    <td><div class="btn btn-primary" id="pay-btn">Pay</div></td>
+                  </tr>
+                </tbody>
+                </table>
+        <div class="btn btn-primary" id="invoice-btn">Create Invoice
+        </div> 
 
         </div>
     
